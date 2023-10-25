@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float MovementSpeed = 5;
     public float Gravity = 9.8f;
     public float gravityModifier;
-    public float jumpForce;
+    public float jumpSpeed;
     private float velocity = 0;
     public bool isOnGround = true;
     private Rigidbody playerRb;
@@ -52,9 +52,9 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            
         }
 
     }
