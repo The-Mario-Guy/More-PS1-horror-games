@@ -7,7 +7,8 @@ public class LightingManager : MonoBehaviour
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private LightingPreset Preset;
     //Variables
-    [SerializeField, Range(0, 48)] private float TimeOfDay;
+    //Og variables is (0, 24)
+    [SerializeField, Range(0, 720f)] private float TimeOfDay;
 
 
     private void Update()
@@ -19,12 +20,14 @@ public class LightingManager : MonoBehaviour
         {
             //(Replace with a reference to the game time)
             TimeOfDay += Time.deltaTime;
-            TimeOfDay %= 48; //Modulus to ensure always between 0-24
-            UpdateLighting(TimeOfDay / 48f);
+            TimeOfDay %= 720f; //Modulus to ensure always between 0-24
+            UpdateLighting(TimeOfDay / 720f);
         }
         else
         {
-            UpdateLighting(TimeOfDay / 48f);
+            //Number = length of day
+            //1440 = 24 minutes
+            UpdateLighting(TimeOfDay / 720f);
         }
     }
 
