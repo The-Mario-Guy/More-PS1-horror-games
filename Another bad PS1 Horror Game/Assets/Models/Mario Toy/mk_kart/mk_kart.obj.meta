@@ -1,19 +1,34 @@
 fileFormatVersion: 2
-guid: 1446a6c4ac9942e41b26f9b8ccd079f3
+guid: a363fea1d3c6bec47bc734e62b67b2eb
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 21300
   internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: d857d1116c86a47468c40b90f984f18a, type: 2}
+      name: E_face
+    second: {fileID: 2100000, guid: 1b0f2f326748d23429057fd61eb3eda0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 4968b156ac353504a95783dc89fd3709, type: 2}
+      name: E_main
+    second: {fileID: 2100000, guid: 1dae0388ad03c074d9fcde14411f54cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kart_body
+    second: {fileID: 2100000, guid: ac625e3d0ff09b14eb1268c47f69d82c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kart_e
+    second: {fileID: 2100000, guid: 37e69deea7f06784889a8611e9715e22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kart_tire
+    second: {fileID: 2100000, guid: 45bd078db19df994b8935fff71a4e898, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -50,7 +65,6 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -78,7 +92,6 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -111,7 +124,6 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
