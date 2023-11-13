@@ -35,7 +35,7 @@ public class CarController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
 
         // Breaking Input
-        isBreaking = Input.GetKey(KeyCode.Space);
+        isBreaking = Input.GetKey(KeyCode.LeftShift);
     }
 
     private void HandleMotor() {

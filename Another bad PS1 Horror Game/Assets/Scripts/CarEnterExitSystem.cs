@@ -8,7 +8,9 @@ public class CarEnterExitSystem : MonoBehaviour
     public MonoBehaviour CarController;
     public Transform Car;
     public Transform Player;
-    public Vector3 offset = new Vector3(0, +2, 0);
+    public Transform PlayerSpawn;
+    public Transform emergencySpawn;
+    //public Vector3 offset = new Vector3(0, +2, 0);
 
     //[Header(“Cam”)]
     public GameObject PlayerCam;
@@ -31,7 +33,7 @@ public class CarEnterExitSystem : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0) && Candrive)  // Here After Click F button and trigger is true player is driving
+        if (Input.GetMouseButtonDown(0) && Candrive)  // Here After Click left button and trigger is true player is driving
         {
            
             CarController.enabled = true; // After Click F button Car Controller Script is enabled
@@ -39,8 +41,8 @@ public class CarEnterExitSystem : MonoBehaviour
             //DriveUi.gameObject.SetActive(false);
 
             // Here we parent Car with player
-            Player.transform.SetParent(Car);
-            Player.transform.position = Player.transform.position + offset;
+            Player.transform.SetParent(PlayerSpawn);
+            Player.transform.position = PlayerSpawn.transform.position;
             Player.gameObject.SetActive(false);
 
             // Camera
@@ -57,13 +59,29 @@ public class CarEnterExitSystem : MonoBehaviour
 
             // Here We Unparent the Player with Car
             Player.transform.SetParent(null);
-            Player.transform.position = Player.transform.position + offset;
+            Player.transform.position = Player.transform.position;
             Player.gameObject.SetActive(true);
 
             // Here If Player Is Not Driving So PlayerCamera turn On and Car Camera turn off
 
             PlayerCam.gameObject.SetActive(true);
             CarCam.gameObject.SetActive(false);
+        }
+        if (Car.rotation.eulerAngles.z == 180f)
+        {
+            Player.transform.position = emergencySpawn.transform.position;
+            Candrive = false;
+            Player.transform.SetParent(null);
+            Player.transform.position = Player.transform.position;
+            Player.gameObject.SetActive(true);
+        }
+        if (Car.rotation.eulerAngles.z == -180f)
+        {
+            Player.transform.position = emergencySpawn.transform.position;
+            Candrive = false;
+            Player.transform.SetParent(null);
+            Player.transform.position = Player.transform.position;
+            Player.gameObject.SetActive(true);
         }
     }
    
