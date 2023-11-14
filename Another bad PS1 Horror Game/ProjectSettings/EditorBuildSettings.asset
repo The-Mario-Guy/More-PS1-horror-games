@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day Night Cycle Test.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Loading/House Door.unity
+    guid: e9819444c121a1e49ac8be386784a5e9
   m_configObjects: {}
