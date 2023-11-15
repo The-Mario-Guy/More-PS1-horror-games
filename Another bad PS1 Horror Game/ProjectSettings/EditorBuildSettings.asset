@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Loading/House Door.unity
     guid: e9819444c121a1e49ac8be386784a5e9
+  - enabled: 1
+    path: Assets/Scenes/Interiors/Dew's House.unity
+    guid: 9ec61cc3f8eec8e4490d22779994f7ff
   m_configObjects: {}
