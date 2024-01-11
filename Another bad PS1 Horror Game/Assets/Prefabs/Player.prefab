@@ -267,11 +267,11 @@ MonoBehaviour:
   PixelMaskTexture: {fileID: 2800000, guid: 55b9f85457b9afc46834d927aa2e61cc, type: 3}
   MaskRepeatX: 512
   MaskRepeatY: 1
-  PixelMaskBrightness: 1.487
+  PixelMaskBrightness: 1.231
   IQOffset: {x: 0, y: 0}
   IQScale: {x: 1, y: 1}
   RFNoise: 0.25
-  LumaSharpen: 2.13
+  LumaSharpen: 4
   QuantizeRGB: 0
   RBits: 8
   GBits: 8

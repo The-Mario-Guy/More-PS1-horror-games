@@ -15,12 +15,12 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.81338024, g: 0.6559055, b: 0.33717299, a: 1}
+  m_FogColor: {r: 0.8230481, g: 0.67197025, b: 0.3575822, a: 1}
   m_FogMode: 2
   m_FogDensity: 0.08
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.7874461, g: 0.5956367, b: 0.24406704, a: 1}
+  m_AmbientSkyColor: {r: 0.79642254, g: 0.61170304, b: 0.2653424, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.49024206, g: 0.7800421, b: 0.64786005, a: 1}
+  m_IndirectSpecularColor: {r: 0.48809063, g: 0.7813331, b: 0.6489283, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -817,7 +817,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.7832905, g: 0.60613775, b: 0.27152547, a: 1}
+  m_Color: {r: 0.7930914, g: 0.6224725, b: 0.29259738, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -876,7 +876,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.079527706, y: 0.4075701, z: -0.9090053, w: 0.035657786}
+  m_LocalRotation: {x: 0.07755254, y: 0.45458505, z: -0.88642895, w: 0.039771065}
   m_LocalPosition: {x: 0.61, y: 2.22, z: 1.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1126,7 +1126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DirectionalLight: {fileID: 705507994}
   Preset: {fileID: 11400000, guid: 60724a01db13059479832f4d026218f6, type: 2}
-  TimeOfDay: 739
+  TimeOfDay: 719
 --- !u!1 &1118556328
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,25 +2887,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2378629176040637415, guid: 9ca05f6a29a217b42b0c7e99914ccd1a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2436540166105035787, guid: 9ca05f6a29a217b42b0c7e99914ccd1a, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3008118708118331870, guid: 9ca05f6a29a217b42b0c7e99914ccd1a, type: 3}
-      propertyPath: LumaSharpen
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3008118708118331870, guid: 9ca05f6a29a217b42b0c7e99914ccd1a, type: 3}
-      propertyPath: FilterQuality
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3008118708118331870, guid: 9ca05f6a29a217b42b0c7e99914ccd1a, type: 3}
-      propertyPath: PixelMaskBrightness
-      value: 1.231
       objectReference: {fileID: 0}
     - target: {fileID: 3078969585167828475, guid: 9ca05f6a29a217b42b0c7e99914ccd1a, type: 3}
       propertyPath: m_LocalPosition.x
