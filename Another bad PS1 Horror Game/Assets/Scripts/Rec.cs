@@ -8,7 +8,7 @@ public class Rec : MonoBehaviour
     public GameObject REC;
     void Start()
     {
-        
+        flash();
     }
 
     // Update is called once per frame
@@ -20,6 +20,9 @@ public class Rec : MonoBehaviour
     IEnumerator flash()
     {
         yield return new WaitForSeconds(1.5f);
-        
+        REC.SetActive(false);
+        yield return new WaitForSeconds(1.5f);
+        REC.SetActive(true);
+
     }
 }
