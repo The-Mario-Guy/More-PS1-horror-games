@@ -5,9 +5,10 @@ using UnityEngine;
 public class FPSLimit : MonoBehaviour
 {
     // Start is called before the first frame update
+    public int fps;
     void Start()
     {
-        Application.targetFrameRate = 25;
+        Application.targetFrameRate = fps;
     }
 
     // Update is called once per frame
